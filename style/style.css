@@ -1,45 +1,39 @@
 body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-
-
 }
-header{
+.logo {
     width: 100%;
     background-color:white;
-}
-h1{
     text-align: center;
     font-weight: 200;
 }
 .container{
     display: flex;
     flex-direction: column;
-
     align-items: center;
-
 }
 .search{
     width: 90%;
     height: 50px;
-    position: absolute;
-
 }
-button{
+.button-search{
     background-color: black;
     color: white;
     border-radius: 5px;
     border: none;
-    margin-top: 77px;
-
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-input{
+.input-address{
     border: 1px solid black;
     color: gray;
     text-align: left;
     padding-left: 10px;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+.map {
+   position: absolute;
 }
