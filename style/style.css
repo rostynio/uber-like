@@ -35,3 +35,9 @@ body{
     margin-top: 10px;
 
 }
+
+.target {
+    background: url(/location.png);
+    height:15px;
+    width:15px;
+}

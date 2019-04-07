@@ -1,10 +1,23 @@
 
-var map, infoWindow;
+var map;
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: -34.397, lng: 150.644},
         zoom: 15
     });
+
+    map.addListener('click', function(e) {
+        placeMarker(e.latLng, map);
+    });
+    
+    function placeMarker(position, map) {
+        var marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            icon: "./assets/place2.png"
+        });
+        map.panTo(position);
+    }
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
